@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -18,9 +19,12 @@ export class SideNavComponent implements OnInit {
       icon:'shopping_bag'
     }
     ];
-  constructor() { }
+    constructor(private service: AppService) { }
 
   ngOnInit(): void {
   }
 
+  onclick(_val:string){
+    this.service.setClicked(_val);
+  }
 }

@@ -1,5 +1,5 @@
 <mat-nav-list *ngFor="let feature of features">
-    <mat-list-item>
+    <mat-list-item  (click)="onclick(feature.title)">
         <mat-icon color="accent" matListIcon>{{feature.icon}}</mat-icon>{{feature.title}}
     </mat-list-item>
 </mat-nav-list>

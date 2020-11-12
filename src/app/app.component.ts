@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-shopping';
+  constructor(private service: AppService) { }
+
+  getDisplayable(_val:string){
+    console.log(`_val: ${_val}`)x
+    return this.service.getDisplayable(_val);
+  }
 }
+
+
+
+ 

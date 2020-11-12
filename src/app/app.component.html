@@ -4,7 +4,8 @@
         <app-side-nav></app-side-nav>
       </mat-drawer>
       <mat-drawer-content>
-        <app-recipe></app-recipe>
+        <app-recipe *ngIf="getDisplayable('Recipe')"></app-recipe>
+        <app-shopping-list *ngIf="getDisplayable('Shopping')"></app-shopping-list>
       </mat-drawer-content>
     </mat-drawer-container>
   <app-footer class="footer"></app-footer>

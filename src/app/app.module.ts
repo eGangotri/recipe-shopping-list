@@ -11,6 +11,8 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     RecipeComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    SideNavComponent
+    SideNavComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
