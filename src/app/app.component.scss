@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    order:-1
+}
+
+.footer {
+  order:99
+}
